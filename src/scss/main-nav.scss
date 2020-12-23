@@ -1,0 +1,60 @@
+.main-nav {
+    
+    &__wrapper {
+        border-bottom: 1px solid $grey;
+    }
+
+    & ul {
+        @include reset;
+        display: flex;
+        flex-wrap: wrap;
+
+        & li {
+            padding-top: 24px;
+            padding-bottom: 17px;
+        }
+
+        & li + li {
+            margin-left: 80px;
+        }
+
+        & li a {
+            padding: 0 10px;
+            font-family: "FuturaPTBook", Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: $text;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-top: 24px;
+            padding-bottom: 20px;
+            position: relative;
+            transition: all .2s ease-in;
+
+            &:hover {
+                color: $accent;
+            }
+
+            &::after {
+                content: "";
+
+                position: absolute;
+
+                bottom: 0;
+                left: 50%;
+
+                width: 0;
+                height: 5px;
+
+                background-color: $accent;
+                transition: all .2s ease-in;
+            }
+
+            &:hover::after {
+                left: 0;
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+}
