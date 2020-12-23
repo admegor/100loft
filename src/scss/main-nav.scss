@@ -2,10 +2,11 @@
     
     &__wrapper {
         border-bottom: 1px solid $grey;
+        margin-bottom: 50px;
     }
 
     & ul {
-        @include reset;
+        @include reset-list;
         display: flex;
         flex-wrap: wrap;
 

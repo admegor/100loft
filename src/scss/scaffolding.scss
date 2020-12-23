@@ -47,7 +47,7 @@ img {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
@@ -56,7 +56,7 @@ img {
 .btn-main {
     display: block;
     padding: 20px 58px;
-    background: linear-gradient(90deg, rgba(111,31,176,1) 0%, rgba(79,14,228,1) 100%);
+    @include gradient;
     font-weight: 500;
     color: $white;
     
@@ -68,9 +68,13 @@ img {
 }
 
 .section-title {
-    margin: 0;
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 700;
+    @include reset;
+    font-size: 33px;
+    line-height: 42px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $text;
 }
 

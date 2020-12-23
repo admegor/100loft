@@ -11,5 +11,14 @@
 @mixin reset {
     margin: 0;
     padding: 0;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+@mixin gradient {
+    background: linear-gradient(90deg, rgba(111,31,176,1) 0%, rgba(79,14,228,1) 100%);
 }
