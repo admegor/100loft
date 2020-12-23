@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "FuturaPT", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: $text;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+  
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn-reset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.btn-main {
+    display: block;
+    padding: 20px 58px;
+    background: linear-gradient(90deg, rgba(111,31,176,1) 0%, rgba(79,14,228,1) 100%);
+    font-weight: 500;
+    color: $white;
+    
+    transition: all .2s ease-in;
+}
+
+.button--main {
+    display: block;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
