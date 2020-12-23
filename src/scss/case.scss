@@ -1,0 +1,83 @@
+.case {
+    background: url("../img/bg-bricks.jpg") no-repeat center center;
+    background-size: cover;
+
+    margin-top: -300px;
+    padding-top: 300px;
+    &__title {
+        max-width: 560px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    &__tabs {
+        display: flex;
+        padding-bottom: 100px;
+    }
+
+    &__tab-input {
+        width: 50%;
+        background-color: $white;
+        padding: 70px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__tab-btn {
+        padding-left: 108px;
+        
+        text-decoration: none;
+        color: $text;
+        transition: all .2s ease-in;
+
+        position: relative;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__tab-btn--active {
+        color: $accent;
+    }
+
+    &__tab-btn--office::before {
+        content: "";
+        position: absolute;
+
+        width: 70px;
+        height: 56px;
+
+        left: 0;
+        top: 0;
+
+        background: url("../img/case/icon-office-active.png") no-repeat center center;
+    }
+
+    &__tab-btn--easy::before {
+        content: "";
+        position: absolute;
+
+        width: 69px;
+        height: 58px;
+
+        left: 0;
+        top: 0;
+
+        background: url("../img/case/icon-easy.png") no-repeat center center;
+    }
+
+    &__tab-btn--flat::before {
+        content: "";
+        position: absolute;
+
+        width: 71px;
+        height: 53px;
+        left: 0;
+        top: 0;
+
+        background: url("../img/case/icon-flat.png") no-repeat center center;
+    }
+}

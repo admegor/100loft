@@ -828,6 +828,10 @@ img {
   opacity: 1;
 }
 
+.top-sales {
+  margin-bottom: 86px;
+}
+
 .top-sales__title {
   max-width: 650px;
   margin: 0 auto;
@@ -887,6 +891,90 @@ img {
   font-weight: 500;
 }
 
+.case {
+  background: url("../img/bg-bricks.jpg") no-repeat center center;
+  background-size: cover;
+  margin-top: -300px;
+  padding-top: 300px;
+}
+
+.case__title {
+  max-width: 560px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.case__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.case__tab-input {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 70px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.case__tab-btn {
+  padding-left: 108px;
+  text-decoration: none;
+  color: #252525;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  position: relative;
+}
+
+.case__tab-btn:hover {
+  color: #6218c6;
+}
+
+.case__tab-btn--active {
+  color: #6218c6;
+}
+
+.case__tab-btn--office::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 56px;
+  left: 0;
+  top: 0;
+  background: url("../img/case/icon-office-active.png") no-repeat center center;
+}
+
+.case__tab-btn--easy::before {
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 58px;
+  left: 0;
+  top: 0;
+  background: url("../img/case/icon-easy.png") no-repeat center center;
+}
+
+.case__tab-btn--flat::before {
+  content: "";
+  position: absolute;
+  width: 71px;
+  height: 53px;
+  left: 0;
+  top: 0;
+  background: url("../img/case/icon-flat.png") no-repeat center center;
+}
+
 .webp .header__location::before { background: url(../img/icon-location.webp); }
 
 .webp .header__phone::before { background: url(../img/icon-phone.webp) no-repeat center center; }
@@ -896,3 +984,11 @@ img {
 .webp .hero { background: url(../img/bg-hero.webp) no-repeat center center; }
 
 .webp .form-catalog__tel-icon { background: url(../img/icon-phone.webp) no-repeat center center; }
+
+.webp .case { background: url(../img/bg-bricks.webp) no-repeat center center; }
+
+.webp .case__tab-btn--office::before { background: url(../img/case/icon-office-active.webp) no-repeat center center; }
+
+.webp .case__tab-btn--easy::before { background: url(../img/case/icon-easy.webp) no-repeat center center; }
+
+.webp .case__tab-btn--flat::before { background: url(../img/case/icon-flat.webp) no-repeat center center; }
